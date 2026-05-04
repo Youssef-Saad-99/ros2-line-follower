@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.000524] (line_follower) JobQueued: {'identifier': 'line_follower', 'dependencies': OrderedDict()}
+[0.000707] (line_follower) JobStarted: {'identifier': 'line_follower'}
+[0.097591] (-) TimerEvent: {}
+[0.198688] (-) TimerEvent: {}
+[0.299664] (-) TimerEvent: {}
+[0.400734] (-) TimerEvent: {}
+[0.502466] (-) TimerEvent: {}
+[0.603639] (-) TimerEvent: {}
+[0.705010] (-) TimerEvent: {}
+[0.806739] (-) TimerEvent: {}
+[0.907830] (-) TimerEvent: {}
+[1.009017] (-) TimerEvent: {}
+[1.110241] (-) TimerEvent: {}
+[1.211102] (-) TimerEvent: {}
+[1.311830] (-) TimerEvent: {}
+[1.413467] (-) TimerEvent: {}
+[1.515644] (-) TimerEvent: {}
+[1.618133] (-) TimerEvent: {}
+[1.720310] (-) TimerEvent: {}
+[1.822075] (-) TimerEvent: {}
+[1.924792] (-) TimerEvent: {}
+[2.027814] (-) TimerEvent: {}
+[2.129927] (-) TimerEvent: {}
+[2.231630] (-) TimerEvent: {}
+[2.333401] (-) TimerEvent: {}
+[2.435824] (-) TimerEvent: {}
+[2.539285] (-) TimerEvent: {}
+[2.558232] (line_follower) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/line_follower', 'build', '--build-base', '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build', 'install', '--record', '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/youssef/ros2-line-follower/ros_ws/src/line_follower', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'youssef', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/youssef', 'OLDPWD': '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/line_follower', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'SYSTEMD_EXEC_PID': '1578', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'youssef', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'youssef', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/youssef-virtual-machine:@/tmp/.ICE-unix/1555,unix/youssef-virtual-machine:/tmp/.ICE-unix/1555', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/674a6dcb_7967_4628_90cc_6fb9e0a7a931', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.EFJQO3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.101', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.639798] (-) TimerEvent: {}
+[2.741011] (-) TimerEvent: {}
+[2.842079] (-) TimerEvent: {}
+[2.943392] (-) TimerEvent: {}
+[3.045679] (-) TimerEvent: {}
+[3.146954] (-) TimerEvent: {}
+[3.249968] (-) TimerEvent: {}
+[3.351333] (-) TimerEvent: {}
+[3.452714] (-) TimerEvent: {}
+[3.500477] (line_follower) StdoutLine: {'line': b'running egg_info\n'}
+[3.501956] (line_follower) StdoutLine: {'line': b'creating build/line_follower/line_follower.egg-info\n'}
+[3.502437] (line_follower) StdoutLine: {'line': b'writing build/line_follower/line_follower.egg-info/PKG-INFO\n'}
+[3.503408] (line_follower) StdoutLine: {'line': b'writing dependency_links to build/line_follower/line_follower.egg-info/dependency_links.txt\n'}
+[3.504011] (line_follower) StdoutLine: {'line': b'writing entry points to build/line_follower/line_follower.egg-info/entry_points.txt\n'}
+[3.504366] (line_follower) StdoutLine: {'line': b'writing requirements to build/line_follower/line_follower.egg-info/requires.txt\n'}
+[3.504785] (line_follower) StdoutLine: {'line': b'writing top-level names to build/line_follower/line_follower.egg-info/top_level.txt\n'}
+[3.505506] (line_follower) StdoutLine: {'line': b"writing manifest file 'build/line_follower/line_follower.egg-info/SOURCES.txt'\n"}
+[3.510009] (line_follower) StdoutLine: {'line': b"reading manifest file 'build/line_follower/line_follower.egg-info/SOURCES.txt'\n"}
+[3.512337] (line_follower) StdoutLine: {'line': b"writing manifest file 'build/line_follower/line_follower.egg-info/SOURCES.txt'\n"}
+[3.512994] (line_follower) StdoutLine: {'line': b'running build\n'}
+[3.513244] (line_follower) StdoutLine: {'line': b'running build_py\n'}
+[3.513637] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build\n'}
+[3.513868] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib\n'}
+[3.514461] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib/line_follower\n'}
+[3.514790] (line_follower) StdoutLine: {'line': b'copying line_follower/__init__.py -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib/line_follower\n'}
+[3.514953] (line_follower) StdoutLine: {'line': b'copying line_follower/sensor_node.py -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib/line_follower\n'}
+[3.515262] (line_follower) StdoutLine: {'line': b'running install\n'}
+[3.516826] (line_follower) StdoutLine: {'line': b'running install_lib\n'}
+[3.517802] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower\n'}
+[3.518148] (line_follower) StdoutLine: {'line': b'copying /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib/line_follower/__init__.py -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower\n'}
+[3.518586] (line_follower) StdoutLine: {'line': b'copying /home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/build/lib/line_follower/sensor_node.py -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower\n'}
+[3.520047] (line_follower) StdoutLine: {'line': b'byte-compiling /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower/__init__.py to __init__.cpython-310.pyc\n'}
+[3.520686] (line_follower) StdoutLine: {'line': b'byte-compiling /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower/sensor_node.py to sensor_node.cpython-310.pyc\n'}
+[3.522267] (line_follower) StdoutLine: {'line': b'running install_data\n'}
+[3.522682] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/share/ament_index\n'}
+[3.523111] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/share/ament_index/resource_index\n'}
+[3.523299] (line_follower) StdoutLine: {'line': b'creating /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/share/ament_index/resource_index/packages\n'}
+[3.523677] (line_follower) StdoutLine: {'line': b'copying resource/line_follower -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/share/ament_index/resource_index/packages\n'}
+[3.523975] (line_follower) StdoutLine: {'line': b'copying package.xml -> /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/share/line_follower\n'}
+[3.524292] (line_follower) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.529191] (line_follower) StdoutLine: {'line': b'Copying build/line_follower/line_follower.egg-info to /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info\n'}
+[3.531657] (line_follower) StdoutLine: {'line': b'running install_scripts\n'}
+[3.553031] (-) TimerEvent: {}
+[3.573254] (line_follower) StdoutLine: {'line': b'Installing sensor_node script to /home/youssef/ros2-line-follower/ros_ws/src/line_follower/install/line_follower/lib/line_follower\n'}
+[3.573909] (line_follower) StdoutLine: {'line': b"writing list of installed files to '/home/youssef/ros2-line-follower/ros_ws/src/line_follower/build/line_follower/install.log'\n"}
+[3.622177] (line_follower) CommandEnded: {'returncode': 0}
+[3.653700] (-) TimerEvent: {}
+[3.755320] (-) TimerEvent: {}
+[3.865928] (-) TimerEvent: {}
+[3.978253] (-) TimerEvent: {}
+[3.992000] (line_follower) JobEnded: {'identifier': 'line_follower', 'rc': 0}
+[4.004259] (-) EventReactorShutdown: {}

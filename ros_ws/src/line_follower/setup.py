@@ -23,7 +23,8 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [
+    'console_scripts': [
+        'sensor_node = line_follower.sensor_node:main',
         ],
     },
 )
