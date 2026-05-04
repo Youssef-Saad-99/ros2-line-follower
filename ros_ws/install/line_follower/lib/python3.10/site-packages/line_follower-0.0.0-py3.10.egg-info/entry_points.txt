@@ -1,3 +1,3 @@
 [console_scripts]
-sensor_node = line_follower.sensor_node:main
+sensor_node = line_follower.line_sensor_node:main
 
