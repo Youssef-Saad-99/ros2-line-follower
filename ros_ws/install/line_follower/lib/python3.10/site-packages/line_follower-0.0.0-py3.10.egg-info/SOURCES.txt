@@ -9,6 +9,7 @@ setup.py
 ../../build/line_follower/line_follower.egg-info/top_level.txt
 ../../build/line_follower/line_follower.egg-info/zip-safe
 line_follower/__init__.py
+line_follower/line_controller_node.py
 line_follower/line_sensor_node.py
 resource/line_follower
 test/test_copyright.py

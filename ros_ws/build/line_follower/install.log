@@ -1,7 +1,9 @@
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/line_sensor_node.py
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__init__.py
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/line_controller_node.py
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__pycache__/line_sensor_node.cpython-310.pyc
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__pycache__/__init__.cpython-310.pyc
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__pycache__/line_controller_node.cpython-310.pyc
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index/resource_index/packages/line_follower
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/package.xml
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/zip-safe
@@ -11,4 +13,5 @@
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/top_level.txt
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/PKG-INFO
-/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower/sensor_node
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower/line_controller_node
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower/line_sensor_node

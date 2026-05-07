@@ -37,7 +37,7 @@ class SensorNode(Node):
         self.publisher_ = self.create_publisher(Float32, '/line_error', 10)
 
         # Timer to run node periodically (every 0.5 seconds)
-        self.timer = self.create_timer(0.5, self.run)
+        self.timer = self.create_timer(0.05, self.run)
 
     # --------------------------------------------------
     def read_sensors(self):
