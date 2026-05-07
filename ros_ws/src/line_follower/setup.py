@@ -25,7 +25,8 @@ setup(
     entry_points={
     'console_scripts': [
         'line_sensor_node = line_follower.line_sensor_node:main',
-        'line_controller_node = line_follower.line_controller_node:main', 
+        'line_controller_node = line_follower.line_controller_node:main',
+        'motor_driver_node = line_follower.motor_driver_node:main',
         ],
     },
 )

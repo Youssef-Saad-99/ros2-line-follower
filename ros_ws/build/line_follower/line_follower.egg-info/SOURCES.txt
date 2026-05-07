@@ -11,6 +11,7 @@ setup.py
 line_follower/__init__.py
 line_follower/line_controller_node.py
 line_follower/line_sensor_node.py
+line_follower/motor_driver_node.py
 resource/line_follower
 test/test_copyright.py
 test/test_flake8.py
