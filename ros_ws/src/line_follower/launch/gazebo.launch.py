@@ -1,7 +1,5 @@
 from launch import LaunchDescription
-
 from launch.actions import ExecuteProcess
-
 from launch_ros.actions import Node
 
 from ament_index_python.packages import get_package_share_directory
@@ -32,7 +30,6 @@ def generate_launch_description():
                 'gazebo',
                 '--verbose',
                 world_file,
-                '-u'
                 '-s',
                 'libgazebo_ros_factory.so'
             ],
@@ -41,29 +38,24 @@ def generate_launch_description():
 
         Node(
             package='robot_state_publisher',
-
             executable='robot_state_publisher',
-
-            parameters=[{
-                'robot_description': open(urdf_file).read()
-            }],
-
+            arguments=[urdf_file],
             output='screen'
         ),
 
         Node(
             package='gazebo_ros',
-
             executable='spawn_entity.py',
 
             arguments=[
-                '-entity',
-                'line_robot',
+                '-entity', 'line_robot',
+                '-file', urdf_file,
 
-                '-file',
-                urdf_file
+                '-x', '0.0',
+                '-y', '0.0',
+                '-z', '0.2'
             ],
 
             output='screen'
-        )
+        ),
     ])
