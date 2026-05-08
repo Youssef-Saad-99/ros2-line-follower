@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
+
 <package format="3">
 
   <name>line_follower</name>
-  <version>0.0.1</version>
+
+  <version>0.0.0</version>
 
   <description>ROS2 Line Follower Robot</description>
 
@@ -10,31 +12,27 @@
     Youssef
   </maintainer>
 
-  <license>MIT</license>
+  <license>Apache-2.0</license>
 
-  <!-- BUILD -->
   <buildtool_depend>ament_python</buildtool_depend>
 
-  <!-- ROS2 -->
   <depend>rclpy</depend>
 
-  <!-- Messages -->
   <depend>std_msgs</depend>
+
   <depend>geometry_msgs</depend>
+
   <depend>nav_msgs</depend>
 
-  <!-- Gazebo -->
-  <depend>gazebo_ros</depend>
+  <depend>sensor_msgs</depend>
 
-  <!-- Robot -->
-  <depend>robot_state_publisher</depend>
-
-  <!-- TF -->
   <depend>tf2_ros</depend>
 
-  <!-- Launch -->
-  <depend>launch</depend>
-  <depend>launch_ros</depend>
+  <depend>robot_state_publisher</depend>
+
+  <depend>gazebo_ros</depend>
+
+  <depend>xacro</depend>
 
   <exec_depend>joint_state_publisher</exec_depend>
 

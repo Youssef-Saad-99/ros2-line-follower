@@ -1,5 +1,0 @@
-  File "/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/line_sensor_node.py", line 1
-    7"""
-     ^^
-SyntaxError: invalid syntax
-

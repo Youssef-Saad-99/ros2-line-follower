@@ -1,0 +1,57 @@
+[1.572s] Invoking command in '/home/youssef/ros2-line-follower/ros_ws/src/line_follower': PYTHONPATH=/home/youssef/ros2-line-follower/ros_ws/build/line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/line_follower build --build-base /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build install --record /home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log --single-version-externally-managed install_data
+[2.258s] running egg_info
+[2.260s] creating ../../build/line_follower/line_follower.egg-info
+[2.260s] writing ../../build/line_follower/line_follower.egg-info/PKG-INFO
+[2.261s] writing dependency_links to ../../build/line_follower/line_follower.egg-info/dependency_links.txt
+[2.263s] writing entry points to ../../build/line_follower/line_follower.egg-info/entry_points.txt
+[2.263s] writing requirements to ../../build/line_follower/line_follower.egg-info/requires.txt
+[2.264s] writing top-level names to ../../build/line_follower/line_follower.egg-info/top_level.txt
+[2.264s] writing manifest file '../../build/line_follower/line_follower.egg-info/SOURCES.txt'
+[2.269s] reading manifest file '../../build/line_follower/line_follower.egg-info/SOURCES.txt'
+[2.271s] writing manifest file '../../build/line_follower/line_follower.egg-info/SOURCES.txt'
+[2.272s] running build
+[2.272s] running build_py
+[2.272s] creating /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build
+[2.273s] creating /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib
+[2.273s] creating /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.274s] copying line_follower/line_sensor_node.py -> /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.276s] copying line_follower/motor_driver_node.py -> /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.276s] copying line_follower/encoder_odometry_node.py -> /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.277s] copying line_follower/__init__.py -> /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.277s] copying line_follower/line_controller_node.py -> /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower
+[2.278s] running install
+[2.278s] running install_lib
+[2.279s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.280s] copying /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower/line_sensor_node.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.281s] copying /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower/motor_driver_node.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.281s] copying /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower/encoder_odometry_node.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.281s] copying /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower/__init__.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.282s] copying /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build/lib/line_follower/line_controller_node.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower
+[2.283s] byte-compiling /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/line_sensor_node.py to line_sensor_node.cpython-310.pyc
+[2.285s] byte-compiling /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/motor_driver_node.py to motor_driver_node.cpython-310.pyc
+[2.288s] byte-compiling /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/encoder_odometry_node.py to encoder_odometry_node.cpython-310.pyc
+[2.290s] byte-compiling /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__init__.py to __init__.cpython-310.pyc
+[2.291s] byte-compiling /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/line_controller_node.py to line_controller_node.cpython-310.pyc
+[2.293s] running install_data
+[2.295s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index
+[2.296s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index/resource_index
+[2.296s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index/resource_index/packages
+[2.297s] copying resource/line_follower -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index/resource_index/packages
+[2.299s] copying package.xml -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower
+[2.299s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch
+[2.299s] copying launch/gazebo.launch.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch
+[2.299s] copying launch/line_follow.launch.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch
+[2.300s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/urdf
+[2.300s] copying urdf/robot.urdf -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/urdf
+[2.301s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/worlds
+[2.301s] copying worlds/empty.world -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/worlds
+[2.301s] creating /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/rviz
+[2.301s] running install_egg_info
+[2.303s] Copying ../../build/line_follower/line_follower.egg-info to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.1-py3.10.egg-info
+[2.305s] running install_scripts
+[2.356s] Installing encoder_odometry_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.357s] Installing line_controller_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.357s] Installing line_sensor_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.358s] Installing motor_driver_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.358s] writing list of installed files to '/home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log'
+[2.409s] Invoked command in '/home/youssef/ros2-line-follower/ros_ws/src/line_follower' returned '0': PYTHONPATH=/home/youssef/ros2-line-follower/ros_ws/build/line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/line_follower build --build-base /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build install --record /home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log --single-version-externally-managed install_data

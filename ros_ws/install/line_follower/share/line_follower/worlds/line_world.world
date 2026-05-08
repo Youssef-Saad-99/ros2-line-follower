@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <world name="line_world">
+
+    <!-- LIGHT -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- BIG WHITE FLOOR -->
+    <model name="floor">
+
+      <static>true</static>
+
+      <pose>0 0 0 0 0 0</pose>
+
+      <link name="link">
+
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>20 20 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+
+          <geometry>
+            <box>
+              <size>20 20 0.1</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+
+        </visual>
+
+      </link>
+
+    </model>
+
+    <!-- BLACK LINE -->
+    <model name="line">
+
+      <static>true</static>
+
+      <pose>0 0 0.06 0 0 0</pose>
+
+      <link name="link">
+
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>12 0.25 0.02</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+
+          <geometry>
+            <box>
+              <size>12 0.25 0.02</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+
+        </visual>
+
+      </link>
+
+    </model>
+
+    <!-- CAMERA VIEW -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0 -4 3 0 0.5 1.57</pose>
+      </camera>
+    </gui>
+
+  </world>
+
+</sdf>

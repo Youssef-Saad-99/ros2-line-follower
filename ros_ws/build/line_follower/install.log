@@ -10,6 +10,10 @@
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower/__pycache__/line_controller_node.cpython-310.pyc
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/ament_index/resource_index/packages/line_follower
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/package.xml
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch/gazebo.launch.py
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch/line_follow.launch.py
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/urdf/robot.urdf
+/home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/worlds/line_world.world
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/zip-safe
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/entry_points.txt
 /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info/SOURCES.txt

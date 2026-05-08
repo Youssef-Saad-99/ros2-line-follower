@@ -157,14 +157,14 @@ class LineControllerNode(Node):
         # =================================================
         # Parameters
         # =================================================
-        self.declare_parameter('Kp', 5.0)
+        self.declare_parameter('Kp', 1.5)
         self.declare_parameter('Ki', 0.0)
-        self.declare_parameter('Kd', 0.1)
+        self.declare_parameter('Kd', 0.05)
 
-        self.declare_parameter('base_speed', 0.10)
-        self.declare_parameter('min_speed', 0.05)
+        self.declare_parameter('base_speed', 0.03)
+        self.declare_parameter('min_speed', 0.01)
 
-        self.declare_parameter('max_angular', 2.0)
+        self.declare_parameter('max_angular', 0.5)
 
         self.declare_parameter('timeout_sec', 0.5)
 

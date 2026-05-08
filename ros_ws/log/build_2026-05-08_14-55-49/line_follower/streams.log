@@ -1,0 +1,27 @@
+[1.399s] Invoking command in '/home/youssef/ros2-line-follower/ros_ws/src/line_follower': PYTHONPATH=/home/youssef/ros2-line-follower/ros_ws/build/line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/line_follower build --build-base /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build install --record /home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log --single-version-externally-managed install_data
+[2.031s] running egg_info
+[2.033s] writing ../../build/line_follower/line_follower.egg-info/PKG-INFO
+[2.034s] writing dependency_links to ../../build/line_follower/line_follower.egg-info/dependency_links.txt
+[2.036s] writing entry points to ../../build/line_follower/line_follower.egg-info/entry_points.txt
+[2.036s] writing requirements to ../../build/line_follower/line_follower.egg-info/requires.txt
+[2.037s] writing top-level names to ../../build/line_follower/line_follower.egg-info/top_level.txt
+[2.040s] reading manifest file '../../build/line_follower/line_follower.egg-info/SOURCES.txt'
+[2.043s] writing manifest file '../../build/line_follower/line_follower.egg-info/SOURCES.txt'
+[2.043s] running build
+[2.043s] running build_py
+[2.045s] running install
+[2.046s] running install_lib
+[2.051s] running install_data
+[2.051s] copying package.xml -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower
+[2.051s] copying launch/gazebo.launch.py -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/launch
+[2.053s] copying urdf/robot.urdf -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/urdf
+[2.053s] copying worlds/line_world.world -> /home/youssef/ros2-line-follower/ros_ws/install/line_follower/share/line_follower/worlds
+[2.053s] running install_egg_info
+[2.057s] Copying ../../build/line_follower/line_follower.egg-info to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages/line_follower-0.0.0-py3.10.egg-info
+[2.060s] running install_scripts
+[2.100s] Installing encoder_odometry_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.100s] Installing line_controller_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.101s] Installing line_sensor_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.102s] Installing motor_driver_node script to /home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/line_follower
+[2.103s] writing list of installed files to '/home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log'
+[2.148s] Invoked command in '/home/youssef/ros2-line-follower/ros_ws/src/line_follower' returned '0': PYTHONPATH=/home/youssef/ros2-line-follower/ros_ws/build/line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/youssef/ros2-line-follower/ros_ws/install/line_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/line_follower build --build-base /home/youssef/ros2-line-follower/ros_ws/build/line_follower/build install --record /home/youssef/ros2-line-follower/ros_ws/build/line_follower/install.log --single-version-externally-managed install_data
