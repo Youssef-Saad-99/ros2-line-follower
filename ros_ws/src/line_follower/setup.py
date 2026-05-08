@@ -27,6 +27,7 @@ setup(
         'line_sensor_node = line_follower.line_sensor_node:main',
         'line_controller_node = line_follower.line_controller_node:main',
         'motor_driver_node = line_follower.motor_driver_node:main',
+        'encoder_odemetry_node = line_follower.encoder_odometry_node:main',
         ],
     },
 )
