@@ -1,18 +1,45 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>line_follower</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="youssefmohamed4004306@gmail.com">youssef</maintainer>
-  <license>TODO: License declaration</license>
 
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>python3-pytest</test_depend>
+  <name>line_follower</name>
+  <version>0.0.1</version>
+
+  <description>ROS2 Line Follower Robot</description>
+
+  <maintainer email="youssefmohamed4004306@gmail.com">
+    Youssef
+  </maintainer>
+
+  <license>MIT</license>
+
+  <!-- BUILD -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- ROS2 -->
+  <depend>rclpy</depend>
+
+  <!-- Messages -->
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <!-- Gazebo -->
+  <depend>gazebo_ros</depend>
+
+  <!-- Robot -->
+  <depend>robot_state_publisher</depend>
+
+  <!-- TF -->
+  <depend>tf2_ros</depend>
+
+  <!-- Launch -->
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+
+  <exec_depend>joint_state_publisher</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
   </export>
+
 </package>
