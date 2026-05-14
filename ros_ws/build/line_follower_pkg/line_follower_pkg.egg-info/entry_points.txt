@@ -1,7 +1,0 @@
-[console_scripts]
-encoder_odom_node = line_follower_pkg.encoder_odometry_node:main
-line_controller_node = line_follower_pkg.line_controller_node:main
-line_sensor_node = line_follower_pkg.line_sensor_node:main
-motor_driver_node = line_follower_pkg.motor_driver_node:main
-serial_comm = line_follower_pkg.serial_comm_node:main
-

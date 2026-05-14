@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'line_follower_pkg'
+package_name = 'line_follower'
 
 setup(
     name=package_name,
@@ -24,11 +24,11 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'line_controller_node = line_follower_pkg.line_controller_node:main',
-            'line_sensor_node = line_follower_pkg.line_sensor_node:main',
-            'motor_driver_node = line_follower_pkg.motor_driver_node:main',
-            'encoder_odom_node = line_follower_pkg.encoder_odometry_node:main',
-            'serial_comm = line_follower_pkg.serial_comm_node:main',
+            'line_controller_node = line_follower.line_controller_node:main',
+            'line_sensor_node = line_follower.line_sensor_node:main',
+            'motor_driver_node = line_follower.motor_driver_node:main',
+            'encoder_odom_node = line_follower.encoder_odometry_node:main',
+            'serial_comm = line_follower.serial_comm_node:main',
         ],
     },
 )

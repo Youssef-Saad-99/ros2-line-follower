@@ -8,16 +8,13 @@ setup.py
 ../../build/line_follower/line_follower.egg-info/requires.txt
 ../../build/line_follower/line_follower.egg-info/top_level.txt
 ../../build/line_follower/line_follower.egg-info/zip-safe
-launch/gazebo.launch.py
-launch/line_follow.launch.py
 line_follower/__init__.py
 line_follower/encoder_odometry_node.py
 line_follower/line_controller_node.py
 line_follower/line_sensor_node.py
 line_follower/motor_driver_node.py
+line_follower/serial_comm.py
 resource/line_follower
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
-urdf/robot.urdf
-worlds/line_world.world
