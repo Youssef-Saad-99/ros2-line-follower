@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
 
-import cv2
-import numpy as np
-
 import rclpy
 from rclpy.node import Node
-
-from sensor_msgs.msg import Image
 from std_msgs.msg import Float32
-
-from cv_bridge import CvBridge
+from sensor_msgs.msg import Range
 
 
 class LineSensorNode(Node):
@@ -18,77 +12,52 @@ class LineSensorNode(Node):
 
         super().__init__('line_sensor_node')
 
-        self.bridge = CvBridge()
-
-        self.subscription = self.create_subscription(
-            Image,
-            '/camera/image_raw',
-            self.image_callback,
+        # IR array input (5 sensors)
+        self.ir_sub = self.create_subscription(
+            Range,
+            '/ir_array',
+            self.ir_callback,
             10
         )
 
-        self.publisher = self.create_publisher(
+        self.pub_error = self.create_publisher(
             Float32,
             '/line_error',
             10
         )
 
-        self.get_logger().info('Real Line Sensor Node Started')
+        self.get_logger().info("IR Line Sensor Node Started")
 
-    def image_callback(self, msg):
+        # last known pattern
+        self.last_error = 0.0
 
-        frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+    def ir_callback(self, msg):
 
-        height, width, _ = frame.shape
+        # Simulated threshold (Gazebo ray distance)
+        # closer = black line
+        value = 1.0 if msg.range < 0.15 else 0.0
 
-        # bottom region only
-        roi = frame[int(height * 0.7):, :]
+        # NOTE: simple hack if only 1 beam (we expand later)
+        error = 0.0
 
-        gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
-
-        _, thresh = cv2.threshold(
-            gray,
-            60,
-            255,
-            cv2.THRESH_BINARY_INV
-        )
-
-        moments = cv2.moments(thresh)
-
-        if moments['m00'] > 0:
-
-            cx = int(moments['m10'] / moments['m00'])
-
-            error = (cx - width / 2) / (width / 2)
-
-            msg_out = Float32()
-            msg_out.data = float(error)
-
-            self.publisher.publish(msg_out)
-
-            self.get_logger().info(
-                f'Line Error: {error:.3f}',
-                throttle_duration_sec=0.1
-            )
-
+        if value == 1.0:
+            error = 0.0
         else:
+            error = self.last_error  # hold last direction
 
-            self.get_logger().warn(
-                'Line Lost',
-                throttle_duration_sec=1.0
-            )
+        self.last_error = error
+
+        out = Float32()
+        out.data = float(error)
+
+        self.pub_error.publish(out)
 
 
-def main(args=None):
-
-    rclpy.init(args=args)
-
+def main():
+    rclpy.init()
     node = LineSensorNode()
-
     rclpy.spin(node)
-
     node.destroy_node()
-
     rclpy.shutdown()
 
 

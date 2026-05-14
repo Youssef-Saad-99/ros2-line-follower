@@ -2,26 +2,23 @@
 
 <robot name="line_robot">
 
-  <!-- ================= BASE LINK ================= -->
+  <!-- ================= BASE ================= -->
 
   <link name="base_link">
 
     <visual>
       <origin xyz="0 0 0.05"/>
-
       <geometry>
         <box size="0.20 0.15 0.05"/>
       </geometry>
 
-      <material name="BlueBody">
+      <material name="Blue">
         <color rgba="0 0.3 1 1"/>
       </material>
-
     </visual>
 
     <collision>
       <origin xyz="0 0 0.05"/>
-
       <geometry>
         <box size="0.20 0.15 0.05"/>
       </geometry>
@@ -29,15 +26,14 @@
 
     <inertial>
       <origin xyz="0 0 0.05"/>
-
       <mass value="1.0"/>
 
       <inertia
         ixx="0.01"
-        ixy="0.0"
-        ixz="0.0"
+        ixy="0"
+        ixz="0"
         iyy="0.01"
-        iyz="0.0"
+        iyz="0"
         izz="0.01"/>
     </inertial>
 
@@ -54,8 +50,8 @@
         <cylinder radius="0.03" length="0.02"/>
       </geometry>
 
-      <material name="MatteBlack">
-        <color rgba="0.05 0.05 0.05 1"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
       </material>
 
     </visual>
@@ -69,6 +65,7 @@
     </collision>
 
     <inertial>
+
       <mass value="0.2"/>
 
       <inertia
@@ -93,8 +90,8 @@
         <cylinder radius="0.03" length="0.02"/>
       </geometry>
 
-      <material name="MatteBlack">
-        <color rgba="0.05 0.05 0.05 1"/>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
       </material>
 
     </visual>
@@ -108,6 +105,7 @@
     </collision>
 
     <inertial>
+
       <mass value="0.2"/>
 
       <inertia
@@ -145,32 +143,46 @@
 
   </joint>
 
-  <!-- ================= GAZEBO MATERIAL SETTINGS ================= -->
+  <!-- ================= IR SENSOR LINKS ================= -->
 
-  <gazebo reference="base_link">
-    <material>Gazebo/Blue</material>
+  <link name="ir_left"/>
+  <link name="ir_center"/>
+  <link name="ir_right"/>
 
-    <ambient>0.1 0.1 0.8 1</ambient>
-    <diffuse>0.1 0.3 1 1</diffuse>
-    <specular>0.01 0.01 0.01 1</specular>
-    <emissive>0 0 0.05 1</emissive>
-  </gazebo>
+  <joint name="ir_left_joint" type="fixed">
 
-  <gazebo reference="left_wheel">
-    <material>Gazebo/Black</material>
-  </gazebo>
+    <parent link="base_link"/>
+    <child link="ir_left"/>
 
-  <gazebo reference="right_wheel">
-    <material>Gazebo/Black</material>
-  </gazebo>
+    <origin xyz="0.08 0.03 0.01"/>
 
-  <!-- ================= DIFFERENTIAL DRIVE ================= -->
+  </joint>
+
+  <joint name="ir_center_joint" type="fixed">
+
+    <parent link="base_link"/>
+    <child link="ir_center"/>
+
+    <origin xyz="0.08 0.0 0.01"/>
+
+  </joint>
+
+  <joint name="ir_right_joint" type="fixed">
+
+    <parent link="base_link"/>
+    <child link="ir_right"/>
+
+    <origin xyz="0.08 -0.03 0.01"/>
+
+  </joint>
+
+  <!-- ================= DIFF DRIVE ================= -->
 
   <gazebo>
     <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
-      <!-- ROS TOPICS -->
       <ros>
+
         <namespace>/</namespace>
 
         <remapping>
@@ -183,26 +195,22 @@
 
       </ros>
 
-      <!-- JOINTS -->
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
 
-      <!-- ROBOT DIMENSIONS -->
       <wheel_separation>0.16</wheel_separation>
       <wheel_diameter>0.06</wheel_diameter>
 
-      <!-- MOTOR SETTINGS -->
       <max_wheel_torque>20</max_wheel_torque>
-      <max_wheel_acceleration>10</max_wheel_acceleration>
 
-      <!-- OUTPUT -->
       <publish_odom>true</publish_odom>
+
       <publish_odom_tf>true</publish_odom_tf>
 
       <odometry_frame>odom</odometry_frame>
+
       <robot_base_frame>base_link</robot_base_frame>
 
-      <!-- UPDATE RATE -->
       <update_rate>50</update_rate>
 
     </plugin>

@@ -19,16 +19,14 @@
     <!-- White background -->
     <background>1 1 1 1</background>
 
-    <!-- Soft light -->
     <ambient>0.8 0.8 0.8 1</ambient>
 
-    <!-- Reduce reflections -->
     <shadows>false</shadows>
 
   </scene>
 
   <!-- ===================================================== -->
-  <!-- REAL FLOOR -->
+  <!-- REAL FLOOR (PURE WHITE ONLY FIXED) -->
   <!-- ===================================================== -->
 
   <model name="real_floor">
@@ -36,8 +34,6 @@
     <static>true</static>
 
     <link name="floor_link">
-
-      <!-- VISUAL -->
 
       <visual name="visual">
 
@@ -47,23 +43,20 @@
           </box>
         </geometry>
 
-        <!-- Matte White Material -->
-
+        <!-- PURE WHITE FLOOR -->
         <material>
 
           <ambient>1 1 1 1</ambient>
 
           <diffuse>1 1 1 1</diffuse>
 
-          <specular>0.01 0.01 0.01 1</specular>
+          <specular>0 0 0 1</specular>
 
           <emissive>0 0 0 1</emissive>
 
         </material>
 
       </visual>
-
-      <!-- COLLISION -->
 
       <collision name="collision">
 
@@ -72,8 +65,6 @@
             <size>20 20 0.1</size>
           </box>
         </geometry>
-
-        <!-- Better wheel grip -->
 
         <surface>
 
@@ -95,8 +86,6 @@
 
     </link>
 
-    <!-- Half below origin -->
-
     <pose>0 0 -0.05 0 0 0</pose>
 
   </model>
@@ -104,13 +93,10 @@
   <!-- ===================== LINE 1 ===================== -->
 
   <model name="line_1">
-
     <static>true</static>
-
     <link name="link">
 
       <visual name="visual">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
@@ -118,25 +104,19 @@
         </geometry>
 
         <material>
-
           <ambient>0 0 0 1</ambient>
-
           <diffuse>0 0 0 1</diffuse>
-
           <specular>0 0 0 1</specular>
-
         </material>
 
       </visual>
 
       <collision name="collision">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
           </box>
         </geometry>
-
       </collision>
 
     </link>
@@ -148,13 +128,10 @@
   <!-- ===================== LINE 2 ===================== -->
 
   <model name="line_2">
-
     <static>true</static>
-
     <link name="link">
 
       <visual name="visual">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
@@ -162,25 +139,19 @@
         </geometry>
 
         <material>
-
           <ambient>0 0 0 1</ambient>
-
           <diffuse>0 0 0 1</diffuse>
-
           <specular>0 0 0 1</specular>
-
         </material>
 
       </visual>
 
       <collision name="collision">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
           </box>
         </geometry>
-
       </collision>
 
     </link>
@@ -192,13 +163,10 @@
   <!-- ===================== LINE 3 ===================== -->
 
   <model name="line_3">
-
     <static>true</static>
-
     <link name="link">
 
       <visual name="visual">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
@@ -206,25 +174,19 @@
         </geometry>
 
         <material>
-
           <ambient>0 0 0 1</ambient>
-
           <diffuse>0 0 0 1</diffuse>
-
           <specular>0 0 0 1</specular>
-
         </material>
 
       </visual>
 
       <collision name="collision">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
           </box>
         </geometry>
-
       </collision>
 
     </link>
@@ -236,13 +198,10 @@
   <!-- ===================== LINE 4 ===================== -->
 
   <model name="line_4">
-
     <static>true</static>
-
     <link name="link">
 
       <visual name="visual">
-
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
@@ -250,26 +209,19 @@
         </geometry>
 
         <material>
-
-
-<ambient>0 0 0 1</ambient>
-
+          <ambient>0 0 0 1</ambient>
           <diffuse>0 0 0 1</diffuse>
-
           <specular>0 0 0 1</specular>
-
         </material>
 
       </visual>
 
-      <collision name="collision">
-
+<collision name="collision">
         <geometry>
           <box>
             <size>4 0.15 0.01</size>
           </box>
         </geometry>
-
       </collision>
 
     </link>
@@ -281,13 +233,10 @@
   <!-- ===================== LINE 5 ===================== -->
 
   <model name="line_5">
-
     <static>true</static>
-
     <link name="link">
 
       <visual name="visual">
-
         <geometry>
           <box>
             <size>5 0.15 0.01</size>
@@ -295,25 +244,19 @@
         </geometry>
 
         <material>
-
           <ambient>0 0 0 1</ambient>
-
           <diffuse>0 0 0 1</diffuse>
-
           <specular>0 0 0 1</specular>
-
         </material>
 
       </visual>
 
       <collision name="collision">
-
         <geometry>
           <box>
             <size>5 0.15 0.01</size>
           </box>
         </geometry>
-
       </collision>
 
     </link>
