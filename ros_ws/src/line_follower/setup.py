@@ -13,8 +13,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='mostafa',
-    maintainer_email='mostafa@todo.todo',
+    maintainer='Youssef',
+    maintainer_email='youssefmohamed4004306@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -24,8 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'line_controller_node = line_follower.line_controller_node:main',
             'line_sensor_node = line_follower.line_sensor_node:main',
+            'line_controller_node = line_follower.line_controller_node:main',
             'motor_driver_node = line_follower.motor_driver_node:main',
             'encoder_odom_node = line_follower.encoder_odometry_node:main',
             'serial_comm = line_follower.serial_comm_node:main',
