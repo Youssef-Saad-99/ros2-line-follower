@@ -1,44 +1,182 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
+<!--
+  ============================================================================
+  package.xml — ROS 2 Package Manifest
+  ============================================================================
+  Package   : line_follower
+  Team      : VEGA
+  Framework : ROS 2 Humble Hawksbill
+  Format    : REP-149  (package format 3)
+  License   : MIT
 
+  Description:
+    Autonomous differential-drive line-following robot using ROS 2 Humble,
+    ATmega32 microcontroller, HC-05 Bluetooth UART bridge, 5-element IR
+    sensor array, optical wheel encoders, and a PID controller.
+
+  Maintainers: Team VEGA — Faculty of Engineering, Graduation Project 2026
+  ============================================================================
+-->
 <package format="3">
 
+  <!-- ======================================================================
+       PACKAGE IDENTITY
+       ====================================================================== -->
+
+  <!-- Package name — must match the folder name and setup.py package_name -->
   <name>line_follower</name>
 
-  <version>0.0.0</version>
+  <!-- Semantic version: MAJOR.MINOR.PATCH -->
+  <version>0.0.1</version>
 
-  <description>ROS2 Line Follower Robot</description>
+  <!-- One-line description shown in ros2 pkg list and documentation -->
+  <description>
+    Autonomous ROS 2 line-follower robot — Team VEGA Graduation Project 2026.
 
-  <maintainer email="youssefmohamed4004306@gmail.com">
-    Youssef
-  </maintainer>
+    This package implements a fully autonomous differential-drive robot that
+    tracks a high-contrast line on a flat surface using a 5-element IR
+    reflectance sensor array. The system integrates:
 
-  <license>Apache-2.0</license>
+      - ATmega32 microcontroller running hard-real-time embedded firmware
+      - HC-05 Bluetooth module providing a wireless UART bridge to the host PC
+      - Five analogue IR sensors sampled via the ATmega32 10-bit ADC
+      - Two optical wheel encoders (20 PPR) connected to INT0 / INT1
+      - Dual DC motors driven through an L298N H-bridge at adjustable PWM duty
+      - PID feedback controller (Kp=0.5, Kd=0.05) running at 50 Hz in ROS 2
+      - Differential-drive kinematic model for dead-reckoning odometry
 
+    ROS 2 Node Architecture:
+      serial_comm_node        — UART/Bluetooth hardware gateway
+      line_sensor_node        — IR weighted-centroid error computation
+      line_controller_node    — PID control loop, publishes /cmd_vel
+      motor_driver_node       — Twist-to-AVR command translation
+      encoder_odometry_node   — Encoder-based pose estimation (/odom + TF)
+
+    Key Topics:
+      /ir_raw          (std_msgs/String)        — Raw IR binary frame S:XXXXX
+      /line_error      (std_msgs/Float32)       — Normalised lateral error [-1,+1]
+      /cmd_vel         (geometry_msgs/Twist)    — Velocity command
+      /motor_cmd       (std_msgs/String)        — AVR motor command e.g. F7, L4
+      /encoder_raw     (std_msgs/String)        — Cumulative tick counts E:L,R
+      /odom            (nav_msgs/Odometry)      — Dead-reckoning pose estimate
+  </description>
+
+  <!-- ======================================================================
+       MAINTAINERS
+       Edit name and email for each Team VEGA member.
+       All maintainers receive bug-report notifications from the ROS index.
+       ====================================================================== -->
+
+  <maintainer email="member1@university.edu">VEGA Member 1</maintainer>
+  <maintainer email="member2@university.edu">VEGA Member 2</maintainer>
+  <maintainer email="member3@university.edu">VEGA Member 3</maintainer>
+  <maintainer email="member4@university.edu">VEGA Member 4</maintainer>
+  <maintainer email="member5@university.edu">VEGA Member 5</maintainer>
+  <maintainer email="member6@university.edu">VEGA Member 6</maintainer>
+  <maintainer email="member7@university.edu">VEGA Member 7</maintainer>
+  <maintainer email="member8@university.edu">VEGA Member 8</maintainer>
+  <maintainer email="member9@university.edu">VEGA Member 9</maintainer>
+  <maintainer email="member10@university.edu">VEGA Member 10</maintainer>
+
+  <!-- ======================================================================
+       LICENSE
+       Use a standard SPDX identifier.
+       Full license text must be present in the LICENSE file at package root.
+       ====================================================================== -->
+
+  <license>MIT</license>
+
+  <!-- ======================================================================
+       AUTHORS
+       Optional — credits contributors beyond the maintainer list.
+       ====================================================================== -->
+
+  <author email="member1@university.edu">VEGA Member 1 — ROS 2 Lead Developer</author>
+  <author email="member2@university.edu">VEGA Member 2 — Embedded Firmware Engineer</author>
+  <author email="member3@university.edu">VEGA Member 3 — Control Systems Engineer</author>
+  <author email="member4@university.edu">VEGA Member 4 — Hardware and PCB Designer</author>
+  <author email="member5@university.edu">VEGA Member 5 — Sensor Integration and Calibration</author>
+  <author email="member6@university.edu">VEGA Member 6 — Odometry and Localisation</author>
+  <author email="member7@university.edu">VEGA Member 7 — Communication and Protocol Design</author>
+  <author email="member8@university.edu">VEGA Member 8 — Testing and Performance Analysis</author>
+  <author email="member9@university.edu">VEGA Member 9 — Documentation and Report</author>
+  <author email="member10@university.edu">VEGA Member 10 — Integration and System Validation</author>
+
+  <!-- ======================================================================
+       BUILD TOOL DEPENDENCIES
+       Tools required to build this package with colcon.
+       ament_python is correct for a pure-Python ROS 2 package.
+       ====================================================================== -->
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_python</buildtool_depend>
 
-  <depend>rclpy</depend>
+  <!-- ======================================================================
+       BUILD DEPENDENCIES
+       Packages needed at compile/build time.
+       For a pure Python package these mirror the exec_depend list,
+       but are listed here for colcon dependency resolution.
+       ====================================================================== -->
 
-  <depend>std_msgs</depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <build_depend>ros2launch</build_depend>
 
-  <depend>geometry_msgs</depend>
+  <!-- ======================================================================
+       EXECUTION (RUNTIME) DEPENDENCIES
+       Packages that must be present when nodes are launched.
+       ====================================================================== -->
 
-  <depend>nav_msgs</depend>
+  <!-- Core ROS 2 Python client library -->
+  <exec_depend>rclpy</exec_depend>
 
-  <depend>cv_bridge</depend>
-  
-  <depend>sensor_msgs</depend>
+  <!-- Standard message types used by all nodes -->
+  <exec_depend>std_msgs</exec_depend>
 
-  <depend>tf2_ros</depend>
-  
-  <depend>cv_bridge</depend>
- 
-  <depend>robot_state_publisher</depend>
+  <!-- geometry_msgs/Twist — published by line_controller_node on /cmd_vel -->
+  <exec_depend>geometry_msgs</exec_depend>
 
-  <depend>gazebo_ros</depend>
+  <!-- nav_msgs/Odometry — published by encoder_odometry_node on /odom -->
+  <exec_depend>nav_msgs</exec_depend>
 
-  <depend>xacro</depend>
+  <!-- sensor_msgs — reserved for future IMU or camera integration -->
+  <exec_depend>sensor_msgs</exec_depend>
 
-  <exec_depend>joint_state_publisher</exec_depend>
+  <!-- TF2 — encoder_odometry_node broadcasts odom → base_link transform -->
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+
+  <!-- Launch system — required for line_follow.launch.py -->
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- cv_bridge / image_transport — reserved for future camera-based detection -->
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+
+  <!-- ======================================================================
+       TEST DEPENDENCIES
+       Packages required only when running colcon test.
+       ====================================================================== -->
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <!-- ======================================================================
+       EXPORT
+       Declares the ament build type so colcon knows how to process
+       this package. Pure Python packages use ament_python.
+       ====================================================================== -->
 
   <export>
     <build_type>ament_python</build_type>
