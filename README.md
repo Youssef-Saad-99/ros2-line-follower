@@ -63,7 +63,7 @@ The **line_follower** project implements a fully autonomous mobile robot capable
 | 7 | Shahd ALi         | ROS2 Developer             | member7@university.edu   |
 | 8 | Sally Faragallah  | ROS2 Developer             | member8@university.edu   |
 | 9 | Aya Rezq          | ROS2 Developer             | member9@university.edu   |
-|10 | Fatama El-Zahraa  | ROS2 Developer             | member10@university.edu  |
+|10 | Fatma El-Zahraa  | ROS2 Developer             | member10@university.edu  |
 
 > **Team VEGA**
 
