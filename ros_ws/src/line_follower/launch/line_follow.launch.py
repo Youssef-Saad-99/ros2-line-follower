@@ -4,7 +4,6 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         # 1. Serial Communication Node
-        # (بدون parameters من هنا لأنها مكتوبة كثوابت داخل كود البايثون)
         Node(
             package='line_follower',
             executable='serial_comm',
@@ -21,7 +20,6 @@ def generate_launch_description():
         ),
 
         # 3. Line Controller Node
-        # (مضبوطة على البارامترز اللي إنت كاتبها في الكود)
         Node(
             package='line_follower',
             executable='line_controller_node',
@@ -39,7 +37,6 @@ def generate_launch_description():
         ),
 
         # 4. Motor Driver Node
-        # (بدون parameters لأنك بتستخدم ثوابت زي MAX_LINEAR_SPEED جوه الكود)
         Node(
             package='line_follower',
             executable='motor_driver_node',
