@@ -14,7 +14,7 @@
     ATmega32 microcontroller, HC-05 Bluetooth UART bridge, 5-element IR
     sensor array, optical wheel encoders, and a PID controller.
 
-  Maintainers: Team VEGA — Faculty of Engineering, Graduation Project 2026
+  Maintainers: Team VEGA
   ============================================================================
 -->
 <package format="3">
@@ -23,7 +23,6 @@
        PACKAGE IDENTITY
        ====================================================================== -->
 
-  <!-- Package name — must match the folder name and setup.py package_name -->
   <name>line_follower</name>
 
   <!-- Semantic version: MAJOR.MINOR.PATCH -->
@@ -63,8 +62,6 @@
 
   <!-- ======================================================================
        MAINTAINERS
-       Edit name and email for each Team VEGA member.
-       All maintainers receive bug-report notifications from the ROS index.
        ====================================================================== -->
 
   <maintainer email="member1@university.edu">VEGA Member 1</maintainer>
@@ -80,15 +77,12 @@
 
   <!-- ======================================================================
        LICENSE
-       Use a standard SPDX identifier.
-       Full license text must be present in the LICENSE file at package root.
        ====================================================================== -->
 
   <license>MIT</license>
 
   <!-- ======================================================================
        AUTHORS
-       Optional — credits contributors beyond the maintainer list.
        ====================================================================== -->
 
   <author email="member1@university.edu">VEGA Member 1 — ROS 2 Lead Developer</author>
