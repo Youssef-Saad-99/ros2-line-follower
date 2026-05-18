@@ -54,16 +54,16 @@ The **line_follower** project implements a fully autonomous mobile robot capable
 
 | # |       Name        |             Role           |           Email          |
 |---|-------------------|----------------------------|--------------------------|
-| 1 | Mostafa Abdelaziz | Embedded Engineer - Leader | member1@university.edu   |
+| 1 | Mostafa Abdelaziz | Embedded Engineer - Leader | mostafaafifi497@gmail.com   |
 | 2 | Youssef Saad      | Embedded Engineer          | youssefsaad306@gmail.com |
-| 3 | Omar Ahmed        | ROS2 Developer             | member3@university.edu   |
-| 4 | Mostafa Shabib    | ROS2 Developer             | member4@university.edu   |
-| 5 | Ahmed Alaa        | Embedded Engineer          | member5@university.edu   |
-| 6 | Rahma Elramdy     | ROS2 Developer             | member6@university.edu   |
-| 7 | Shahd ALi         | ROS2 Developer             | member7@university.edu   |
-| 8 | Sally Faragallah  | ROS2 Developer             | member8@university.edu   |
-| 9 | Aya Rezq          | ROS2 Developer             | member9@university.edu   |
-|10 | Fatma El-Zahraa  | ROS2 Developer             | member10@university.edu  |
+| 3 | Omar Ahmed        | ROS2 Developer             | omarelnady144@gmail.com   |
+| 4 | Mostafa Shabib    | ROS2 Developer             | mostafashabib51@gmail.com   |
+| 5 | Ahmed Alaa        | Embedded Engineer          | ahmedelkholy.com1@gmail.com   |
+| 6 | Rahma Elramdy     | ROS2 Developer             | rahmaelramady5@gmail.com   |
+| 7 | Shahd ALi         | ROS2 Developer             | shahdalihussein072@gmail.com   |
+| 8 | Sally Faragallah  | ROS2 Developer             | Sallyfaragalla1@gmail.com   |
+| 9 | Aya Rezq          | ROS2 Developer             | ayarezq144@gmail.com   |
+|10 | Fatma El-Zahraa  | ROS2 Developer             | mohamedzharaa73@gmail.com  |
 
 > **Team VEGA**
 
